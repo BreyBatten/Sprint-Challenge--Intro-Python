@@ -22,6 +22,9 @@ class City:
     self.lat = float(lat)
     self.lon = float(lon)
 
+  def __str__(self):
+    return f'{self.name} - {self.lat}, {self.lon}'
+
 cities = []
 
 def cityreader(cities=[]):
